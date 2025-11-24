@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const WC_URL = "https://woo.xo.je/paul/";
+const WC_URL = "https://woo.xo.je/paul/wp-json/wc/v3";
 const CONSUMER_KEY = "ck_2a6a5087fc626900052c06ff0adcd18a58164c3b";
 const CONSUMER_SECRET = "cs_c9cb54dfacee1cceb4b44dc5b127dcae7ba80462";
 
