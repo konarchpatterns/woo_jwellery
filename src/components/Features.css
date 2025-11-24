@@ -1,0 +1,392 @@
+.nap-earrings-section {
+  padding: 100px 20px;
+  background-color: #fafafa;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 60px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Before/After Slider Styles */
+.comparison-slider {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  height: 600px;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  background-color: #e8e8e8;
+}
+
+.slider-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.slider-image-wrapper.after {
+  z-index: 2;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
+
+.slider-label {
+  position: absolute;
+  bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.slider-label.left {
+  left: 30px;
+}
+
+.slider-label.right {
+  right: 30px;
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #fff;
+  z-index: 4;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  pointer-events: auto;
+  cursor: ew-resize;
+}
+
+.arrow-left,
+.arrow-right {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1;
+}
+
+.arrow-left {
+  margin-right: 2px;
+}
+
+.arrow-right {
+  margin-left: 2px;
+}
+
+.comparison-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comparison-btn {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  padding: 14px 32px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 300px;
+}
+
+.comparison-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.comparison-btn.primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.comparison-btn.primary:hover {
+  background-color: #333;
+}
+
+/* As Seen On Section */
+.as-seen-on {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.press-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.press-logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #000;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.press-logo:hover {
+  opacity: 1;
+}
+
+/* Founder Section */
+.founder-section {
+  padding: 100px 20px;
+  background-color: #f8f8f8;
+}
+
+.founder-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.founder-image {
+  width: 100%;
+}
+
+.founder-placeholder {
+  width: 100%;
+  height: 500px;
+  background: url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80")
+    center/cover no-repeat;
+  border-radius: 8px;
+}
+
+.founder-text h2 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.founder-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cta-button-outline {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  padding: 14px 40px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.value-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.value-item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Instagram Section */
+.instagram-section {
+  padding: 80px 20px;
+  background-color: #fafafa;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.instagram-post {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.instagram-post:hover {
+  transform: scale(1.05);
+}
+
+.instagram-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nap-earrings-section,
+  .founder-section {
+    padding: 60px 15px;
+  }
+
+  .comparison-slider {
+    height: 400px;
+  }
+
+  .slider-label {
+    bottom: 15px;
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+
+  .slider-label.left {
+    left: 15px;
+  }
+
+  .slider-label.right {
+    right: 15px;
+  }
+
+  .slider-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    font-size: 20px;
+  }
+
+  .comparison-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .comparison-btn {
+    max-width: 100%;
+  }
+
+  .press-logos {
+    gap: 30px;
+  }
+
+  .press-logo {
+    font-size: 18px;
+  }
+
+  .founder-text h2 {
+    font-size: 28px;
+  }
+
+  .founder-text p {
+    font-size: 16px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+  }
+
+  .value-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .value-item h3 {
+    font-size: 14px;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
