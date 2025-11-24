@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const WC_URL = "https://localhost/paul/wp-json/wc/v3";
-const CONSUMER_KEY = "ck_26ea8083ff6d66989f499ea234d65f1aab8d8ee3";
-const CONSUMER_SECRET = "cs_96f87484f484c4d16e30c967b23189136cf9d01d";
+const WC_URL = "https://woo.xo.je/paul/";
+const CONSUMER_KEY = "ck_2a6a5087fc626900052c06ff0adcd18a58164c3b";
+const CONSUMER_SECRET = "cs_c9cb54dfacee1cceb4b44dc5b127dcae7ba80462";
 
 // For local HTTP development, we can use query string authentication
 const api = axios.create({
