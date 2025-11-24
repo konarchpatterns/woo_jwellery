@@ -113,7 +113,11 @@ const Header = () => {
           </nav>
 
           <div className="header-actions">
-            <button className="icon-btn" aria-label="Search" onClick={toggleSearch}>
+            <button
+              className="icon-btn"
+              aria-label="Search"
+              onClick={toggleSearch}
+            >
               <svg
                 width="20"
                 height="20"
@@ -316,8 +320,14 @@ const Header = () => {
         {/* Search Modal */}
         {isSearchOpen && (
           <div className="search-modal" onClick={() => setIsSearchOpen(false)}>
-            <div className="search-modal-content" onClick={(e) => e.stopPropagation()}>
-              <button className="close-search" onClick={() => setIsSearchOpen(false)}>
+            <div
+              className="search-modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="close-search"
+                onClick={() => setIsSearchOpen(false)}
+              >
                 <svg
                   width="24"
                   height="24"

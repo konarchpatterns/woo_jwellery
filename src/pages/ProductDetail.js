@@ -86,8 +86,11 @@ function ProductDetail() {
   }, [selectedVariations, variations, product]);
 
   const handleAddToCart = () => {
-    const displayImage = currentVariation?.image?.src || product.images[selectedImage]?.src || product.images[0]?.src;
-    
+    const displayImage =
+      currentVariation?.image?.src ||
+      product.images[selectedImage]?.src ||
+      product.images[0]?.src;
+
     const cartItem = {
       id: product.id,
       name: product.name,
@@ -216,8 +219,12 @@ function ProductDetail() {
               <>
                 {currentVariation.sale_price ? (
                   <>
-                    <span className="price-sale">${currentVariation.sale_price}</span>
-                    <span className="price-regular">${currentVariation.regular_price}</span>
+                    <span className="price-sale">
+                      ${currentVariation.sale_price}
+                    </span>
+                    <span className="price-regular">
+                      ${currentVariation.regular_price}
+                    </span>
                   </>
                 ) : (
                   <span className="price-sale">${currentVariation.price}</span>

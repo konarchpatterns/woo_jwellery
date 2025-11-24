@@ -140,7 +140,7 @@ function Checkout() {
         const methods = await getShippingZoneMethods(targetZone.id);
         const enabledMethods = methods.filter((m) => m.enabled);
         setShippingMethods(enabledMethods);
-        
+
         // Set first shipping method as default
         if (enabledMethods.length > 0) {
           setFormData((prev) => ({

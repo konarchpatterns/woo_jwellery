@@ -52,7 +52,7 @@ const ProductGrid = ({
   const addToCart = (product, e) => {
     e.preventDefault();
     e.stopPropagation();
-    
+
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
     const existingItem = cart.find((item) => item.id === product.id);
 
@@ -70,10 +70,11 @@ const ProductGrid = ({
 
     localStorage.setItem("cart", JSON.stringify(cart));
     window.dispatchEvent(new Event("cartUpdated"));
-    
+
     // Show toast notification
     setToast(`${product.name} added to cart!`);
-  };  return (
+  };
+  return (
     <section
       className="product-grid-section"
       id={title.toLowerCase().replace(/\s+/g, "-")}

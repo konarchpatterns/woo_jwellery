@@ -154,8 +154,16 @@ function Shop() {
   return (
     <div className="shop-page">
       <div className="shop-header">
-        <h1>{searchQuery ? `Search Results for "${searchQuery}"` : "Shop All Products"}</h1>
-        <p>{searchQuery ? `Showing results for your search` : "Discover our complete collection"}</p>
+        <h1>
+          {searchQuery
+            ? `Search Results for "${searchQuery}"`
+            : "Shop All Products"}
+        </h1>
+        <p>
+          {searchQuery
+            ? `Showing results for your search`
+            : "Discover our complete collection"}
+        </p>
       </div>
 
       <div className="shop-container">
