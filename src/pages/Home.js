@@ -25,7 +25,9 @@ function Home() {
             "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=500&fit=crop&q=80",
           salePrice:
             parseFloat(product.sale_price) || parseFloat(product.price),
-          regularPrice: parseFloat(product.regular_price),
+          regularPrice: product.regular_price
+            ? parseFloat(product.regular_price)
+            : null,
           badge: product.tags.length > 0 ? product.tags[0].name : null,
           options:
             product.attributes.find((attr) => attr.name === "Color")?.options ||

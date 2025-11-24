@@ -145,11 +145,13 @@ const ProductGrid = ({
                       )}
                       <div className="product-price">
                         <span className="sale-price">${product.salePrice}</span>
-                        {product.regularPrice && (
-                          <span className="regular-price">
-                            ${product.regularPrice}
-                          </span>
-                        )}
+                        {product.regularPrice &&
+                          product.regularPrice !== product.salePrice &&
+                          !isNaN(product.regularPrice) && (
+                            <span className="regular-price">
+                              ${product.regularPrice}
+                            </span>
+                          )}
                       </div>
                       {product.options && (
                         <div className="product-options">
